@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+</head>
+<body>
+    <h1>Carpeta pruebas</h1>
+
+    <script>
+
+        
+        //Tarea nueva
+        fetch("/tareas/nueva",{
+            method : "POST",
+            body : JSON.stringify({ tarea : "tarea nueva" }),
+            headers : {
+                "Content-type" : "application/json"
+            }
+        })
+        .then(respuesta => respuesta.json())
+        .then(x => console.log(x))
+        
+        
+
+        /*
+        //Borrar tareas
+        fetch("/tareas/borrar/675048face29a047f16e0b8f",{
+            method : "DELETE"
+        })
+        .then(respuesta => respuesta.json())
+        .then(x => console.log(x))
+        */
+
+        /*
+        //Actualizar tareas
+        fetch("/tareas/actualizar/6756d3ae8ad267ba0abc98e8/1",{
+            method : "PUT",
+            body : JSON.stringify({ tarea : "texto actualizado" }),
+            headers : {
+                "Content-type" : "application/json"
+            }
+        })
+        .then(respuesta => respuesta.json())
+        .then(x => console.log(x))
+        */
+
+        /*
+        //Editar estado
+        fetch("/tareas/actualizar/6756d3ae8ad267ba0abc98e8/2",{
+            method : "PUT"
+        })
+        .then(respuesta => respuesta.json())
+        .then(x => console.log(x))
+        */
+        
+
+    </script>
+</body>
+</html>
