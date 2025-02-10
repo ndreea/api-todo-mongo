@@ -1,8 +1,8 @@
-BackEnd - Api ToDo ✅
+# BackEnd - Api ToDo ✅
 Este repositorio contiene el backend un ejercicio desarrollado durante el curso.
 
-Tecnologías utilizadas
+## Tecnologías utilizadas
 La base de datos está diseñada con MongoDB. También se han utilizado CORS, Node, express y dotenv.
 
-Licencia
+## Licencia
 Se prohíbe la comercialización y distribución de los archivos.
